@@ -12,13 +12,20 @@ struct CoursesView: View {
     @Namespace var namespace
     var body: some View {
         ZStack {
-            CourseItem()
-                .matchedGeometryEffect(id: "Card", in: namespace, isSource: !show)
-                .frame(width: 335, height:250)
+            ScrollView {
+                VStack(spacing: 20) {
+                    ForEach(courses) { item in
+                        CourseItem(course: item)
+                            .matchedGeometryEffect(id: item.id, in: namespace, isSource: !show)
+                            .frame(width: 335, height:250)
+                    }
+                }
+                .frame(maxWidth: .infinity)
+            }
             if show {
                 ScrollView {
-                    CourseItem()
-                        .matchedGeometryEffect(id: "Card", in: namespace)
+                    CourseItem(course: courses[0])
+                        .matchedGeometryEffect(id: courses[0].id, in: namespace)
                         .frame(height: 300)
                     VStack {
                         ForEach(0 ..< 20) { item in
@@ -27,8 +34,18 @@ struct CoursesView: View {
                     }
                     .padding()
                 }
+                // The background hides the other cards for now with a white or black background depending on light or dark mode
+                .background(Color("Background 1"))
                 .ignoresSafeArea([.all])
-                .transition(.opacity)
+                // Helps with transition animation in an out
+                .transition(
+                    .asymmetric(insertion: AnyTransition
+                                    .opacity
+                                    .animation(Animation.spring().delay(0.3)),
+                                removal: AnyTransition
+                                    .opacity
+                                    .animation(.spring()))
+                )
             }
         }
         .onTapGesture {
