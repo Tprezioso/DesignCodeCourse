@@ -62,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2C51E82524099500606BEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F67FB1A2520103900DF47EE /* Course.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9F74A590250ADA2800ACA267 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +85,9 @@
 			children = (
 				9F74A596250ADA2800ACA267 /* DesignCodeCourseApp.swift */,
 				9FB8BF002515580F0059B894 /* Navigation */,
+				9F2C51E82524099500606BEA /* Model */,
 				9FB8BF03251558260059B894 /* Items */,
 				9FECBEF9250C4AEC0092CDDF /* CoursesView.swift */,
-				9F67FB1A2520103900DF47EE /* Course.swift */,
 				9FB8BF06251558AC0059B894 /* CourseList.swift */,
 				9F74A598250ADA2900ACA267 /* Assets.xcassets */,
 			);
