@@ -41,6 +41,7 @@
 		9FB8BEFD2515571F0059B894 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8BEFB2515571F0059B894 /* CourseItem.swift */; };
 		9FB8BF07251558AC0059B894 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8BF06251558AC0059B894 /* CourseList.swift */; };
 		9FB8BF08251558AC0059B894 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8BF06251558AC0059B894 /* CourseList.swift */; };
+		9FD859F2252B61EB0009FB40 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD859F1252B61EB0009FB40 /* TabBar.swift */; };
 		9FECBEF7250C47880092CDDF /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FECBEF6250C47880092CDDF /* CourseRow.swift */; };
 		9FECBEF8250C47880092CDDF /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FECBEF6250C47880092CDDF /* CourseRow.swift */; };
 		9FECBEFA250C4AEC0092CDDF /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FECBEF9250C4AEC0092CDDF /* CoursesView.swift */; };
@@ -71,6 +72,7 @@
 		9F7A54412510231E00E8602C /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		9FB8BEFB2515571F0059B894 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		9FB8BF06251558AC0059B894 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		9FD859F1252B61EB0009FB40 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9FECBEF6250C47880092CDDF /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 		9FECBEF9250C4AEC0092CDDF /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				9F74A597250ADA2800ACA267 /* ContentView.swift */,
+				9FD859F1252B61EB0009FB40 /* TabBar.swift */,
 				9F7A54412510231E00E8602C /* Sidebar.swift */,
 			);
 			path = Navigation;
@@ -279,6 +282,7 @@
 			files = (
 				9F67FB1B2520103900DF47EE /* Course.swift in Sources */,
 				9F7A54422510231F00E8602C /* Sidebar.swift in Sources */,
+				9FD859F2252B61EB0009FB40 /* TabBar.swift in Sources */,
 				9FB8BEFC2515571F0059B894 /* CourseItem.swift in Sources */,
 				9F6E75B72527EA9E0085C1A0 /* CourseDetail.swift in Sources */,
 				9F4A0B7125268CAF00897DC8 /* CloseButton.swift in Sources */,
